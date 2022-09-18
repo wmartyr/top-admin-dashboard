@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,28 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="header">
         <div class="search-bar">
-            <img src="./icons/magnify.png" alt="Search icon"> 
+            <img class="header-icon" src="./icons/magnify.svg" alt="Search icon">
+            <input type="search" name="search" id="search">
         </div>
-        <div class="user-info"></div>
-        <div class="welcome"></div>
-        <div class="buttons"></div>
+        <div class="user-info">
+            <img class="header-icon" src="./icons/bell-ring-outline.svg" alt="Bell icon">
+            <img class="user-info-avatar" src="./icons/avatar-koala.svg" alt="Koala avatar">
+            <span>Kate Koala</span>
+        </div>
+        <div class="welcome">
+            <img class="welcome-avatar" src="./icons/avatar-koala.svg" alt="Koala avatar">
+            <span>Hi there,</span>
+            <span>Kate Koala (@kate)</span>
+        </div>
+        <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </div>
     <div class="sidebar">
         <div class="dashboard"></div>
@@ -38,6 +53,7 @@
         <div class="announcements"></div>
         <div class="trending"></div>
     </main>
-    
+
 </body>
+
 </html>
