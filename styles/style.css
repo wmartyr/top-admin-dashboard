@@ -1,5 +1,5 @@
 * {
-    /* outline: dashed 1px gray; */
+    /* outline: dashed 1px lightgray; */
 }
 
 :root {
@@ -16,7 +16,7 @@ body {
     max-width: 1440px;
     margin: auto;
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(1000px, 5fr);
+    grid-template-columns: minmax(250px, 1fr) minmax(1000px, 4fr);
     grid-template-rows: 200px 1fr;
 }
 
@@ -85,10 +85,6 @@ body {
     width: 80px;
 }
 
-/* .welcome div {
-    place-self: center flex-start;
-} */
-
 .welcome-greeting {
     place-self: end start;
     font-weight: 700;
@@ -122,19 +118,59 @@ button {
     border-radius: 20px;
 }
 
-
-
-.dashboard-icon {
-    width: 30px;
-}
-
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 50px 300px 150px;
+    background-color: var(--clr-sidebar-background);
+    gap: 50px;
+    color: white;
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    place-items: start;
+}
+
+.dashboard-icon {
+    width: 50px;
+}
+
+.dashboard h2 {
+    align-self: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
 }
 
 .sidebar-icon {
-    width: 30px;
+    width: 25px;
+    place-self: center;
+}
+
+.sidebar-text {
+    place-self: center start;
+    font-weight: 700;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.settings-support-privacy {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+
 }
 
 main {
