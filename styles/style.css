@@ -2,6 +2,15 @@
     outline: dashed 1px gray;
 }
 
+:root {
+    --clr-main-background: #e2e7f0;
+    --clr-sidebar-background: #3a8ed3;
+    --clr-card-highlight: #ebb52e;
+    --clr-shadow: #ccd1d8;
+    --clr-button: #3a8ed3;
+    --clr-search: #e2e7f0;
+}
+
 .header-icon {
     width: 25px;
 }
