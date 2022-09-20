@@ -1,5 +1,5 @@
 * {
-    /* outline: dashed 1px lightgray; */
+    outline: dashed 1px gray;
 }
 
 :root {
@@ -9,6 +9,7 @@
     --clr-shadow: #ccd1d8;
     --clr-button: #3a8ed3;
     --clr-search: #e2e7f0;
+    --clr-card-paragraph: #636363;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -25,7 +26,7 @@ body {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 80px 1fr;
     padding: 0 40px;
 }
 
@@ -176,6 +177,50 @@ button {
 main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    background-color: var(--clr-main-background);
+    box-shadow: 0px 7px 5px -3px var(--clr-shadow) inset;
+    padding: 30px 20px;
+
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px repeat(3, 1fr);
+    gap: 20px;
+}
+
+h3 {
+    grid-column: 1 / 3;
+    font-weight: 400;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 25px 1fr 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 7px;
+    border-left-style: solid;
+    border-left-width: 7px;
+    border-left-color: var(--clr-card-highlight);
+}
+
+.card p {
+    color: var(--clr-card-paragraph);
+    line-height: 1.125rem;
+}
+
+.icons-row {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 25px 25px 25px;
+    gap: 20px;
 }
 
 .card-icon {
