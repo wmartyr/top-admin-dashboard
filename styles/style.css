@@ -1,4 +1,8 @@
-:root {
+* {
+    outline: 1px dashed lightgray;
+}
+
+* {
     --clr-main-background: #e2e7f0;
     --clr-sidebar-background: #3a8ed3;
     --clr-card-highlight: #ebb52e;
